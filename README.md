@@ -1,4 +1,3 @@
 # My first personal website
 
-
-You access right [here](https://thiagoclmn.github.io/my-website/)
+You can access it right [here](https://thiagoclmn.github.io/my-website/)
