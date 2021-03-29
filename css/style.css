@@ -21,8 +21,22 @@ div#profile-image {
     text-align: center;
 }
 
+#ul-homepage {
+    background: #3399ff;
+    padding: 20px;
+    list-style-type: none;
+    border-radius: 10px;
+}
+  
+#li-homepage {
+    background: #cce5ff;
+    margin: 5px;
+    text-align: center;
+}
+
 footer {
     color: white;
     text-align: center;
     font-style: italic;
+    margin: auto;
 }
