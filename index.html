@@ -1,42 +1,247 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="./css/style.css">
-        <title>Homepage</title>
-    </head>
-    <body>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thiago Calomino — Engenheiro Elétrico</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
 
-        <header>
-            <h1> Homepage </h1>
-        </header>
+  <!-- Cursor -->
+  <div id="cursor"></div>
+  <div id="cursor-ring"></div>
 
-        <section>
-            
-            <article>
-                <h1>Thiago Calomino</h1>
-                <p>A student-developer</p>
-            </article>
+  <!-- NAV -->
+  <nav>
+    <a class="nav-logo" href="#">TC_</a>
+    <ul class="nav-links">
+      <li><a href="#about">Sobre</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projetos</a></li>
+      <li><a href="#contact">Contato</a></li>
+    </ul>
+  </nav>
 
-            <article id="contacts">
-                <ul id="ul-homepage">
-                    <p>Follow me &#x1F447;</p>
-                    <li id="li-homepage"><img src="images/logo-linkedin.png" alt="LinkedIn"> <a href="https://www.linkedin.com/in/thiago-da-rocha-calomino-gon%C3%A7alves-2b64b0173/" target="_blank" rel="external">Linkedin</a></li>
-                    <li id="li-homepage"><img src="images/logo-github.png" alt="GitHub"> <a href="https://github.com/ThiagoClmn" target="_blank" rel="external">GitHub</a></li>
-                </ul>
-            </article>
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-grid-bg"></div>
+    <div class="hero-glow"></div>
 
-            <article>
-                <a href="about-me.html">Who am I?</a>
-            </article>
-        </section>
+    <p class="hero-tag">Engenharia Elétrica · USP · São Paulo</p>
+    <h1 class="hero-name">Thiago<br><em>Calomino</em></h1>
+    <p class="hero-desc">
+      Estudante de Engenharia Elétrica na Poli-USP apaixonado por código.
+      Trabalho na interseção entre hardware e software — de scripts Python
+      a interfaces web modernas.
+    </p>
+    <div class="hero-cta">
+      <a href="#projects" class="btn btn-primary">Ver projetos →</a>
+      <a href="#contact" class="btn btn-ghost">Entrar em contato</a>
+    </div>
 
-        <footer>
-            &copy; Thiago Calomino
-        </footer>
+    <div class="hero-scroll-hint">
+      <span class="scroll-line"></span>
+      scroll
+    </div>
+  </section>
 
-    </body>
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="about-left">
+      <div class="section-header">
+        <span class="section-num">01</span>
+        <h2 class="section-title">Sobre mim</h2>
+      </div>
+      <div class="about-text reveal">
+        <p>Sou <strong>Thiago da Rocha Calomino Gonçalves</strong>, natural do Rio de Janeiro
+        e atualmente morando em São Paulo onde curso Engenharia Elétrica na
+        <strong>Escola Politécnica da USP</strong>.</p>
+        <p>Tenho interesse genuíno em tecnologia desde cedo — gosto de entender como
+        as coisas funcionam, seja em nível de circuitos ou em camadas de software.
+        No momento estou me aprofundando em <strong>desenvolvimento web com React</strong>
+        e sempre buscando novos estágios e desafios.</p>
+        <p>Quando não estou estudando, exploro projetos pessoais que conectam
+        eletrônica e programação.</p>
+      </div>
+    </div>
+    <div class="about-right reveal">
+      <div class="about-facts">
+        <div class="fact-card">
+          <p class="fact-label">Formação</p>
+          <p class="fact-value">Engenharia Elétrica</p>
+        </div>
+        <div class="fact-card">
+          <p class="fact-label">Instituição</p>
+          <p class="fact-value">Poli-USP</p>
+        </div>
+        <div class="fact-card">
+          <p class="fact-label">Localização</p>
+          <p class="fact-value">São Paulo, SP</p>
+        </div>
+        <div class="fact-card">
+          <p class="fact-label">Origem</p>
+          <p class="fact-value">Rio de Janeiro, RJ</p>
+        </div>
+        <div class="fact-card" style="grid-column: span 2;">
+          <p class="fact-label">Status</p>
+          <p class="fact-value">📓 Na faculdade · procurando estágio</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="section-header reveal">
+      <span class="section-num">02</span>
+      <h2 class="section-title">Skills</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-category reveal">
+        <p class="skill-cat-label">Linguagens</p>
+        <div class="skill-tags">
+          <span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">TypeScript</span>
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">C</span>
+        </div>
+      </div>
+      <div class="skill-category reveal">
+        <p class="skill-cat-label">Frontend</p>
+        <div class="skill-tags">
+          <span class="skill-tag">React</span>
+          <span class="skill-tag">HTML5</span>
+          <span class="skill-tag">CSS3</span>
+          <span class="skill-tag">Vanilla JS</span>
+        </div>
+      </div>
+      <div class="skill-category reveal">
+        <p class="skill-cat-label">Ferramentas & OS</p>
+        <div class="skill-tags">
+          <span class="skill-tag">Linux</span>
+          <span class="skill-tag">Git</span>
+          <span class="skill-tag">GitHub</span>
+          <span class="skill-tag">VS Code</span>
+        </div>
+      </div>
+      <div class="skill-category reveal">
+        <p class="skill-cat-label">Interesses</p>
+        <div class="skill-tags">
+          <span class="skill-tag">Eletrônica</span>
+          <span class="skill-tag">Métodos Numéricos</span>
+          <span class="skill-tag">Algoritmos</span>
+          <span class="skill-tag">Web APIs</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="section-header reveal">
+      <span class="section-num">03</span>
+      <h2 class="section-title">Projetos</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="projects-grid">
+
+      <a class="project-card reveal" href="https://github.com/ThiagoClmn/Project_ClimaTempo_Simples" target="_blank" rel="noopener">
+        <div class="project-header">
+          <span class="project-lang">CSS · JS</span>
+          <span class="project-arrow">↗</span>
+        </div>
+        <h3 class="project-name">ClimaTempo Simples</h3>
+        <p class="project-desc">Aplicativo de clima construído com HTML, CSS e Vanilla JavaScript. Consome uma API de previsão do tempo e exibe condições em tempo real.</p>
+      </a>
+
+      <a class="project-card reveal" href="https://github.com/ThiagoClmn/ExerciciosJS_CursoEmVideo_PT-BR" target="_blank" rel="noopener">
+        <div class="project-header">
+          <span class="project-lang">JavaScript</span>
+          <span class="project-arrow">↗</span>
+        </div>
+        <h3 class="project-name">Exercícios JS — Curso em Vídeo</h3>
+        <p class="project-desc">Coleção de exercícios de JavaScript do curso Curso em Vídeo (PT-BR), cobrindo fundamentos e lógica de programação.</p>
+      </a>
+
+      <a class="project-card reveal" href="https://github.com/ThiagoClmn/UFF-metodos-numericos" target="_blank" rel="noopener">
+        <div class="project-header">
+          <span class="project-lang">Python · C</span>
+          <span class="project-arrow">↗</span>
+        </div>
+        <h3 class="project-name">Métodos Numéricos — UFF</h3>
+        <p class="project-desc">Implementação de algoritmos de métodos numéricos em Python e C, incluindo integração numérica, raízes de equações e sistemas lineares.</p>
+      </a>
+
+      <a class="project-card reveal" href="https://github.com/ThiagoClmn/PCS3110_algoritmos" target="_blank" rel="noopener">
+        <div class="project-header">
+          <span class="project-lang">Python</span>
+          <span class="project-arrow">↗</span>
+        </div>
+        <h3 class="project-name">PCS3110 — Algoritmos</h3>
+        <p class="project-desc">Trabalhos e projetos da disciplina PCS3110 — Algoritmos e Estruturas de Dados — da Escola Politécnica da USP.</p>
+      </a>
+
+      <a class="project-card reveal" href="https://github.com/ThiagoClmn" target="_blank" rel="noopener" style="border-style: dashed; align-items: center; justify-content: center; text-align: center; min-height: 180px;">
+        <span class="project-lang">GitHub</span>
+        <h3 class="project-name" style="margin-top:0.8rem;">Ver todos os repositórios →</h3>
+        <p class="project-desc">23 repositórios públicos no GitHub</p>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="contact-inner">
+      <div class="section-header reveal">
+        <span class="section-num">04</span>
+        <h2 class="section-title">Contato</h2>
+        <div class="section-line"></div>
+      </div>
+      <h3 class="contact-tagline reveal">
+        Vamos <span>trabalhar juntos?</span>
+      </h3>
+      <p class="contact-sub reveal">
+        Estou procurando oportunidades de estágio e aberto a projetos interessantes.
+        Sinta-se à vontade para entrar em contato!
+      </p>
+      <div class="contact-links">
+        <a class="contact-link reveal" href="mailto:thcalomino@usp.br">
+          <div>
+            <p class="contact-link-label">E-mail</p>
+            <p class="contact-link-value">thcalomino@usp.br</p>
+          </div>
+          <span class="contact-link-arrow">→</span>
+        </a>
+        <a class="contact-link reveal" href="https://www.linkedin.com/in/thiago-da-rocha-calomino-gonçalves/" target="_blank" rel="noopener">
+          <div>
+            <p class="contact-link-label">LinkedIn</p>
+            <p class="contact-link-value">Thiago da Rocha Calomino Gonçalves</p>
+          </div>
+          <span class="contact-link-arrow">→</span>
+        </a>
+        <a class="contact-link reveal" href="https://github.com/ThiagoClmn" target="_blank" rel="noopener">
+          <div>
+            <p class="contact-link-label">GitHub</p>
+            <p class="contact-link-value">@ThiagoClmn</p>
+          </div>
+          <span class="contact-link-arrow">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p class="footer-copy">© 2026 Thiago Calomino. Todos os direitos reservados.</p>
+    <p class="footer-made">feito com <span>♥</span> em São Paulo</p>
+  </footer>
+
+  <script src="js/index.js" defer></script>
+</body>
 </html>
