@@ -1,11 +1,14 @@
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+*, *::before, *::after {
+      box-sizing: border-box; margin: 0; padding: 0;
+}
 
 :root {
     --bg: #0a0a0f;
+    --bg: #1d2956;
     --surface: #111118;
     --border: #1e1e2e;
-    --accent: #e8ff47;
-    --accent2: #47ffe8;
+    --accent2: #e8ff47;
+    --accent: #47ffe8;
     --text: #f0f0f5;
     --muted: #6b6b80;
     --card: #13131d;
@@ -33,6 +36,7 @@ body {
       transition: transform 0.1s ease;
       mix-blend-mode: difference;
 }
+/**
 #cursor-ring {
       width: 36px; height: 36px;
       border: 1.5px solid var(--accent);
@@ -45,6 +49,7 @@ body {
       transform: translate(-12px, -12px);
       opacity: 0.5;
 }
+*/
 
 /* Noise overlay */
 body::before {
